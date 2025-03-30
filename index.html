@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DHOM : Pour une Agriculture Intelligente</title>
+    <title>Smart Farm : Gestion Agricole Intelligente</title>
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -21,75 +21,24 @@
             padding: 30px; 
         }
         h1 { 
-            color: #c0392b; 
+            color: #27ae60; 
             font-size: 2.8em; 
             margin-bottom: 15px; 
             text-transform: uppercase; 
             letter-spacing: 1.5px; 
         }
-        h2 { 
-            color: #c0392b; 
-            font-size: 2.2em; 
-            margin: 25px 0 15px; 
-            border-bottom: 3px solid #c0392b; 
-            padding-bottom: 10px; 
-            transition: color 0.3s; 
-        }
-        h2:hover { 
-            color: #e74c3c; 
-        }
-        h3 { 
-            color: #34495e; 
-            font-size: 1.6em; 
-            margin: 20px 0 10px; 
-        }
-        p { 
-            font-size: 18px; 
-            line-height: 1.8; 
-            margin-bottom: 15px; 
-            padding: 0 10px; 
-        }
-        .system, .technology { 
+        .section { 
             background-color: #f9f9f9; 
             border-radius: 10px; 
             padding: 20px; 
             margin: 25px 0; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-            transition: transform 0.3s; 
-        }
-        .system:hover, .technology:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .image-placeholder {
-            width: 100%; 
-            height: 220px; 
-            background-color: #bdc3c7; 
-            border-radius: 10px; 
-            margin: 15px 0; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: #6c757d; 
-            font-weight: bold; 
-            font-size: 1.2em; 
         }
         ul { 
             text-align: left; 
             margin: 10px auto; 
             max-width: 700px; 
             padding-left: 20px; 
-        }
-        li { 
-            margin-bottom: 8px; 
-            position: relative; 
-            padding-left: 20px; 
-        }
-        li::before {
-            content: "✔️"; 
-            position: absolute; 
-            left: 0; 
-            color: #c0392b; 
         }
         footer { 
             margin-top: 30px; 
@@ -100,88 +49,59 @@
 </head>
 <body>
     <div class="container">
-        <h1>DHOM : Pour une Agriculture Intelligente</h1>
-        <p><strong>Bienvenue sur la page de présentation de notre projet IoT !</strong></p>
+        <h1>Smart Farm : Gestion Agricole Intelligente</h1>
+        <p><strong>Optimisation de l'irrigation, protection des récoltes et surveillance des conditions climatiques.</strong></p>
         
-        <!-- Ajout de l'image -->
-        <img src="images/système.png" alt="Système" style="max-width: 100%; height: auto; margin: 15px 0; border-radius: 10px;">
-
-        <div class="technology">
-            <h2>🔧 Technologie</h2>
-            <p>Le projet utilise la plateforme <strong>ESP32</strong>, un microcontrôleur puissant et polyvalent, idéal pour des applications IoT. 
-               Il est équipé de Wi-Fi et Bluetooth intégrés, permettant une connectivité en temps réel avec divers capteurs.</p>
-            <p>Les capteurs utilisés incluent :</p>
-            <ul>
-                <li><strong>DHT11</strong> : Capteur de température et d'humidité, fournissant des données précises sur les conditions climatiques.</li>
-                <li><strong>HX710B</strong> : Utilisé pour la mesure de pression, essentiel pour surveiller le sol et les niveaux d'eau.</li>
-                <li><strong>Capteur d'humidité de sol</strong> : Permet de déterminer le niveau d'humidité du sol, optimisant ainsi l'irrigation.</li>
-                <li><strong>Capteur de niveau d'eau</strong> : Surveille le niveau d'eau dans les réservoirs, garantissant un approvisionnement adéquat pour l'irrigation.</li>
-                <li><strong>Capteur de gaz</strong> : Détecte les fuites de gaz pour assurer la sécurité des installations.</li>
-                <li><strong>Capteur de flamme</strong> : Alerte en cas de détection de flammes, contribuant à la sécurité incendie dans les espaces agricoles.</li>
-            </ul>
-            <p>En outre, le projet intègre des afficheurs <strong>LCD</strong> pour visualiser les données en temps réel, ainsi que l'application <strong>Blynk</strong> pour une gestion à distance. 
-               Les données sont également envoyées à <strong>HiveMQ</strong>, un broker MQTT, facilitant la communication entre les différents composants du système. 
-               En se basant sur les données collectées par les capteurs, nous effectuons également des prédictions concernant les informations météorologiques, comme la température, l'humidité et la pression.</p>
+        <div class="section">
+            <h2>À propos du projet</h2>
+            <p>Smart Farm est un projet innovant intégrant l'IoT pour une gestion efficace des fermes agricoles. Grâce à des capteurs intelligents et une automatisation avancée, notre solution permet d'améliorer la productivité agricole tout en réduisant l'impact environnemental.</p>
         </div>
-
-        <div class="system">
-            <h2>📊 Fonctionnalités</h2>
-            <p>Le système offre une variété de fonctionnalités essentielles, notamment :</p>
+        
+        <div class="section">
+            <h2>Technologies Utilisées</h2>
             <ul>
-                <li>Mesure précise de la température et de l'humidité.</li>
-                <li>Surveillance en temps réel des conditions environnementales.</li>
-                <li>Alertes instantanées en cas de détection de gaz ou de flammes.</li>
-                <li>Affichage des données sur des dispositifs LCD pour un accès facile.</li>
-                <li>Gestion à distance via l'application Blynk.</li>
+                <li>ESP8266 pour la gestion et la communication des capteurs.</li>
+                <li>Capteur de pluie pour fermer la porte en cas d'averse.</li>
+                <li>Capteur de flamme pour détecter les incendies.</li>
+                <li>Servo-moteur pour automatiser les ouvertures.</li>
+                <li>Interface Web et application mobile pour le suivi et le contrôle à distance.</li>
             </ul>
         </div>
 
-        <div class="system">
-            <h2>📍 Déploiement</h2>
-            <p>Le système est conçu pour être utilisé dans un environnement agricole, optimisant ainsi :</p>
+        <div class="section">
+            <h2>Fonctionnalités du Système</h2>
             <ul>
-                <li>La gestion de l'irrigation pour une utilisation efficace de l'eau.</li>
-                <li>La sécurité des installations grâce à des alertes en temps réel.</li>
-                <li>Une agriculture durable en surveillant les conditions climatiques.</li>
+                <li>Automatisation de l'irrigation selon l'humidité du sol.</li>
+                <li>Détection d'incendie et activation de la sécurité.</li>
+                <li>Gestion de la température et de l'humidité de l'air.</li>
+                <li>Notifications en temps réel pour alertes et interventions.</li>
+                <li>Contrôle et gestion via une interface web et mobile.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Avantages de Smart Farm</h2>
+            <ul>
+                <li>Réduction des pertes agricoles grâce à une surveillance proactive.</li>
+                <li>Économie d'eau et d'énergie grâce à une gestion intelligente.</li>
+                <li>Automatisation des tâches répétitives pour plus d'efficacité.</li>
+                <li>Facilité d'utilisation avec une interface intuitive.</li>
             </ul>
         </div>
 
-        <h2>Systèmes du Projet</h2>
-
-        <div class="system">
-            <h3>Système 1 : Gestion de l'Irrigation et Sécurité</h3>
-            <img src="images/système1.jpeg" alt="Système 1" style="max-width: 100%; height: auto; margin: 15px 0; border-radius: 10px;">
-            <p>Ce système intègre l'ESP32 avec des capteurs DHT11 et HX710B, permettant de mesurer la température, l'humidité et la pression. 
-               Les données sont affichées en temps réel sur un écran LCD, fournissant une visualisation claire des conditions actuelles. 
-               De plus, un capteur magnétique assure la sécurité de la porte, envoyant des alertes instantanées en cas d'accès non autorisé.</p>
+        <div class="section">
+            <h2>Architecture du Système</h2>
+            <p>Le projet repose sur une architecture distribuée :</p>
+            <ul>
+                <li>Capteurs connectés envoyant des données en temps réel.</li>
+                <li>ESP8266 traitant les données et activant les actionneurs.</li>
+                <li>Serveur cloud stockant et analysant les données.</li>
+                <li>Application mobile/web permettant une surveillance et un contrôle à distance.</li>
+            </ul>
         </div>
-
-        <div class="system">
-            <h3>Système 2 : Serre Agricole</h3>
-            <img src="images/système2.jpeg" alt="Système 2" style="max-width: 100%; height: auto; margin: 15px 0; border-radius: 10px;">
-            <p>Ce système est conçu pour optimiser les conditions de croissance des plantes dans une serre. 
-               Il contrôle l'éclairage à l'aide de capteurs de lumière, ajustant l'intensité en fonction des besoins des plantes. 
-               En outre, un capteur ultrason détecte les obstacles, garantissant un environnement sûr pour les opérations automatiques.</p>
-        </div>
-
-        <div class="system">
-            <h3>Système 3 : Système de Détection d'Incendie</h3>
-            <img src="images/système3.png" alt="Système 3" style="max-width: 100%; height: auto; margin: 15px 0; border-radius: 10px;">
-            <p>Ce système de sécurité incendie utilise un capteur de flamme et un capteur de pluie pour détecter rapidement les incendies. 
-               En cas de détection de flammes, il envoie des alertes instantanées et actionne des servo-moteurs pour activer des dispositifs d'extinction. 
-               Cela permet de réagir rapidement aux situations d'urgence, protégeant ainsi les installations agricoles.</p>
-        </div>
-
-        <div class="system">
-            <h3>Système 4 : Maison Smart</h3>
-            <img src="images/système4.jpeg" alt="Système 4" style="max-width: 100%; height: auto; margin: 15px 0; border-radius: 10px;">
-            <p>Ce système intègre des technologies de maison intelligente, avec un capteur de gaz pour détecter les fuites, garantissant la sécurité des occupants. 
-               Un servo-moteur permet de contrôler l'accès à la maison, tandis qu'un système RFID offre un moyen pratique et sécurisé d'entrer. 
-               Le tout est alimenté par un panneau solaire, assurant une solution durable et respectueuse de l'environnement.</p>
-        </div>
-
+        
         <footer>
-            &copy; 2025 DHOM. Tous droits réservés.
+            &copy; 2025 Smart Farm. Tous droits réservés.
         </footer>
     </div>
 </body>
